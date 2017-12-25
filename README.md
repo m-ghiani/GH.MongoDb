@@ -1,4 +1,4 @@
-# Generic MongoDb Repository .Net Core 2.0
+# Generic MongoDb Repository .Net Core 3.0
 
 ## Synopsis
 
@@ -42,4 +42,4 @@ and so on..
 
 by NUGET
 
-Install-Package GH.MongoDb.GenericRepository
+Install-Package GH.MongoDb.GenericRepository -Version 2.0.7
