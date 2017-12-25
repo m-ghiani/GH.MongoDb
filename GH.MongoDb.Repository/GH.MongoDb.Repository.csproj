@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GH.MongoDb.Interfaces\GH.MongoDb.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>C:\Users\massimo\.nuget\packages\mongodb.bson\2.5.0\lib\netstandard1.5\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>C:\Users\massimo\.nuget\packages\mongodb.driver\2.5.0\lib\netstandard1.5\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.GridFS">
+      <HintPath>C:\Users\massimo\.nuget\packages\mongodb.driver.gridfs\2.5.0\lib\netstandard1.5\MongoDB.Driver.GridFS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
