@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>GH.MongoDb.GenericRepository</PackageId>
+    <Version>3.0.0</Version>
+    <Authors>Massimo Ghiani</Authors>
+    <Company />
+    <Product>GH.MongoDb.GenericRepository</Product>
+    <Description>Is a repository pattern implementation for mongodb.
+It contains abstract classes for CRUD operations.</Description>
+    <Copyright>2017-2018</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/m-ghiani/GH.MongoDb</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

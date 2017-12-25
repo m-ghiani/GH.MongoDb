@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RepositoryUrl>https://github.com/m-ghiani/GH.MongoDb</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>3.0.0</Version>
+    <Authors>Massimo Ghiani</Authors>
+    <Company />
+    <PackageId>GH.MongoDb.GenericRepository.GeoExtension</PackageId>
+    <Product>GH.MongoDb.GenericRepository.GeoExtension</Product>
+    <Description>Add Geographic query extension to GH.MongoDb.GenericRepository</Description>
+    <Copyright>2017-2018</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>GH.MongoDb.GenericRepository.BucketExtension</PackageId>
+    <Authors>Massimo Ghiani</Authors>
+    <Company />
+    <Product>GH.MongoDb.GenericRepository.BucketExtension</Product>
+    <Description>Add GridFs features to GH.MongoDb.GenericRepository</Description>
+    <Version>3.0.0</Version>
+    <Copyright>2017-2018</Copyright>
+    <RepositoryUrl>https://github.com/m-ghiani/GH.MongoDb</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
