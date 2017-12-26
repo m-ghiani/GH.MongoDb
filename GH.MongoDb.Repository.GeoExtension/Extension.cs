@@ -13,7 +13,7 @@ namespace GH.MongoDb.Repository.GeoExtension
     {
         public static async Task<IEnumerable<T>> Get<T, TKey>(this GenericRepositoryAsync<T, TKey> repo, double latitude, double longitude, double distance, Expression<Func<T, bool>> filter, int? skip, int? limit, CancellationToken token = default(CancellationToken)) where T : IDocument<TKey>, ILocationDocument, new() where TKey : IEquatable<TKey>
         {
-            if (!repo.CollectionExist) return new List<T>();
+            if (!(await repo.ExistCollection(token))) return new List<T>();
             FilterDefinition<T> query = null;
             if (distance > 100 && distance < 50000)
             {
@@ -28,7 +28,7 @@ namespace GH.MongoDb.Repository.GeoExtension
 
         public static async Task<long> Count<T, TKey>(this GenericRepositoryAsync<T, TKey> repo, double latitude, double longitude, double distance, Expression<Func<T, bool>> filter, CancellationToken token = default(CancellationToken)) where T : IDocument<TKey>, ILocationDocument, new() where TKey : IEquatable<TKey>
         {
-            if (!repo.CollectionExist) return 0;
+            if (!(await repo.ExistCollection(token))) return 0;
             FilterDefinition<T> query = null;
             if (distance > 100 && distance < 50000)
             {
